@@ -1,23 +1,25 @@
-/* 
+/*
   Start here and work your way down the nested components.
   Not all files in the project need code added.
   Look at each file to see what props need to be passed!
 */
 
 // Import the state hook
-import React, { useState } from 'react';
 import './App.css';
-// Import the Posts (plural!) and SearchBar components, since they are used inside App component
-  //Posts 
+
+import React, {useState} from 'react';
+
+// Import the Posts (plural!) and SearchBar components, since they are used
+// inside App component
+// Posts
 import Posts from './components/Posts/Posts';
-  // Search Bar
+// Search Bar
 import SearchBar from './components/SearchBar/SearchBar';
-  // dummyData
+// dummyData
 import dummyData from './dummy-data';
-  // checking console for dummyData
-console.log (dummyData);
 
-
+// checking console for dummyData
+console.log(dummyData);
 
 const App = () => {
   // Create a state called `posts` to hold the array of post objects, **initializing to dummyData**.
